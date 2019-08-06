@@ -50,6 +50,13 @@ EOF
 # Permissions for this file shoudl be set to 0600
 chmod 0600 ${HOME}/.pgpass
 
+# Set timezone if set
+if [ ! -z "${TZ}" ]; then
+    echo "Setting timezone to ${TZ}"
+    ln -snf "/usr/share/zoneinfo/${TZ}" /etc/localtime
+    echo "${TZ}" > /etc/timezone
+fi
+
 # Execute cron with parameters (autopostgresql script is under /etc/cron.daily)
 echo "Execute cron service..."
 exec cron -f -l ${CRON_LOG_LEVEL:-8}

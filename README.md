@@ -22,7 +22,6 @@ docker pull ppadial/autopostgresqlbackup
 | :------- | :---------------------------------------------------------------------------- |
 | /backups | a directory that contains the crontab files (one or many) with crontab format |
 
-Remember to map your /etc/localtime to the /etc/localtime of the container (good practice)
 
 ## Environment variables
 
@@ -43,7 +42,7 @@ Remember to map your /etc/localtime to the /etc/localtime of the container (good
 | LATEST          | yes or no                               | no        | Additionally keep a copy of the most recent backup in a seperate directory.                                                                                                                                                                                                |
 | OPT             | valid commandline arguments             | empty     | OPT string for use with pg_dump ( see man pg_dump )                                                                                                                                                                                                                        |
 | EXT             | a file extension starts with .          | .sql      | Backup files extension                                                                                                                                                                                                                                                     |
-
+| TZ              | timezone                                | UTC       | Set timezone                                                                                                                                                                                                                                                               |
 Optional specific environment variables:
 
 | NAME                                                                                                                     | VALUES | DEFAULT | DESCRIPTION                                                                                                                     |
