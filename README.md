@@ -43,6 +43,7 @@ docker pull ppadial/autopostgresqlbackup
 | OPT             | valid commandline arguments             | empty     | OPT string for use with pg_dump ( see man pg_dump )                                                                                                                                                                                                                        |
 | EXT             | a file extension starts with .          | .sql      | Backup files extension                                                                                                                                                                                                                                                     |
 | TZ              | timezone                                | UTC       | Set timezone                                                                                                                                                                                                                                                               |
+
 Optional specific environment variables:
 
 | NAME                                                                                                                     | VALUES | DEFAULT | DESCRIPTION                                                                                                                     |
