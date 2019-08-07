@@ -2,7 +2,7 @@
 
 > AutoPostgreSQLBackup in a docker container
 
-[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=ppadial&repository=autopostgresqlbackup)](https://hub.docker.com/r/ppadial/autopostgresqlbackup/builds/)
+[![](https://img.shields.io/docker/cloud/build/freinet/autopostgresqlbackup.svg)](https://hub.docker.com/r/freinet/autopostgresqlbackup/builds/)
 
 This docker container uses the autopostgresqlbackup package from ubuntu repos with a minimal modification to make it able to use variables from environment variables, making the configuration through docker model possible. The original source code with modifications is in this repo, also the license GPLv2 has been respected and this repo is under GPLv2.
 
@@ -11,7 +11,7 @@ This container follow the [dockerfile good practices](https://docs.docker.com/en
 ## Installation
 
 ```bash
-docker pull ppadial/autopostgresqlbackup
+docker pull freinet/autopostgresqlbackup
 ```
 
 ## Configuration
@@ -83,21 +83,10 @@ services:
       file: /path/to/file/that/contains/password
 ```
 
-## Meta
+## Origin
 
 Paulino Padial – [@ppadial](https://github.com/ppadial) – github.com/ppadial
 
 Distributed under the GPLv2 license. See [LICENSE](LICENSE) for more information.
 
 [https://github.com/ppadial/docker-autopostgresqlbackup](https://github.com/ppadial/)
-
-## Contributing
-
-1. Fork it (<https://github.com/ppadial/docker-autopostgresqlbackup/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[wiki]: https://github.com/ppadial/docker-autopostgresqlbackup/wiki
