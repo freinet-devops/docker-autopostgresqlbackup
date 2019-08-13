@@ -2,7 +2,12 @@
 
 > AutoPostgreSQLBackup in a docker container
 
-[![](https://img.shields.io/docker/cloud/build/freinet/autopostgresqlbackup.svg)](https://hub.docker.com/r/freinet/autopostgresqlbackup/builds/)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/freinet/autopostgresqlbackup.svg)](https://hub.docker.com/r/freinet/autopostgresqlbackup/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/freinet/autopostgresqlbackup.svg)](https://hub.docker.com/r/freinet/autopostgresqlbackup/builds/)
+[![Docker image size](https://images.microbadger.com/badges/image/freinet/autopostgresqlbackup.svg)](https://microbadger.com/images/freinet/autopostgresqlbackup)
+[![Docker image version](https://images.microbadger.com/badges/version/freinet/autopostgresqlbackup.svg)](https://microbadger.com/images/freinet/autopostgresqlbackup)
+
+
 
 This docker container uses the autopostgresqlbackup package from ubuntu repos with a minimal modification to make it able to use variables from environment variables, making the configuration through docker model possible. The original source code with modifications is in this repo, also the license GPLv2 has been respected and this repo is under GPLv2.
 
