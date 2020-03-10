@@ -57,6 +57,9 @@ if [ ! -z "${TZ}" ]; then
     echo "${TZ}" > /etc/timezone
 fi
 
+# set /etc/environment for cron
+printenv > /etc/environment
+
 # Execute cron with parameters (autopostgresql script is under /etc/cron.daily)
 echo "Execute cron service..."
 exec cron -f -l ${CRON_LOG_LEVEL:-8}
